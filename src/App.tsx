@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App bg-gradient-to-r from-red-900 to-purple-900 w-full h-full pt-10 justify-center content-center flex">
+    <div className="App bg-gradient-to-r from-red-900 to-purple-900 w-full h-full pt-10 pb-10 justify-center content-center flex">
       <div className="contet w-11/12 text-white">
         <RHeader
           name={apiData?.header.name!}
