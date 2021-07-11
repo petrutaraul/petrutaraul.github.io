@@ -2,7 +2,7 @@ import { IProjects, Project } from "../../interfaces/interfaces";
 
 export default function RProjects(props: IProjects) {
   return (
-    <div className="w-full h-auto rounded-lg flex shadow-2xl flex-col px-10 pb-4 pt-4 bg-opacity-5 bg-white">
+    <div className="w-full h-auto rounded-lg flex shadow-2xl flex-col px-10 pb-4 pt-4 bg-opacity-5 bg-white mb-10">
       <h2 className="mb-4 text-2xl font-bold">PROJECTS</h2>
       <div className="grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-4">
         {props.projects?.map((project: Project, key) => {
