@@ -13,14 +13,13 @@ export default function RProjects(props: IProjects) {
                 project.first && "order-first col-auto md:col-span-3"
               } flex-col mb-8 md:mb-0 hover:bg-white hover:bg-opacity-5 p-4 rounded-xl`}
             >
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <div>
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="ml-0"
-                  />
-                </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-center"
+              >
+                <img src={project.image} alt={project.name} />
               </a>
               <span>{project.name}</span>
               <div className="flex flex-wrap justify-center">
