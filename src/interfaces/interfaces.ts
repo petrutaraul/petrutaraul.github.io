@@ -1,59 +1,54 @@
 export interface Project {
-    image: string;
-    link: string;
-    name: string;
-    techs: [];
-    description: string;
-};
+  image: string;
+  link: string;
+  name: string;
+  techs: [];
+  description: string;
+  first: boolean;
+}
 
 export interface Social {
-    icon: string;
-    label: string;
-    link: string;
-    newTab: boolean;
-};
+  icon: string;
+  label: string;
+  link: string;
+  newTab: boolean;
+}
 
-export interface Skills {
-    img: string;
-    skill: string;
+export interface Skill {
+  img: string;
+  skill: string;
 }
 
 export interface About {
-    description: string;
-    image: string;
-}
-
-export interface Header {
-    contact: string;
-    job: string;
-    name: string;
-    resume: string;
+  description: string;
 }
 
 // components
-export interface IProjects {
-    projects: Project[],
-};
-
-export interface IRDekstop {
-    projects: Project[];
-    socials: Social[];
-    header: Header;
+export interface Header {
+  contact: string;
+  job: string;
+  name: string;
+  resume: string;
+  emailIcon: string;
+  socials: Social[];
 }
 
-export interface IModal {
-    name: string;
-    open: boolean;
+export interface IProjects {
+  projects: Project[];
+}
+
+export interface ISkills {
+  skills: Skill[];
 }
 
 export interface IApiData {
-    about: About[];
-    header: Header,
-    metas: {
-        title: string;
-        description: string;
-    },
-    projects: Project[];
-    skils: Skills[];
-    socials: Social[];
+  about: About;
+  header: Header;
+  metas: {
+    title: string;
+    description: string;
+  };
+  projects: Project[];
+  skills: Skill[];
+  socials: Social[];
 }
