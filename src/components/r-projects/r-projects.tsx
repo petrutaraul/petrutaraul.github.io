@@ -19,14 +19,18 @@ export default function RProjects(props: IProjects) {
                 rel="noreferrer"
                 className="flex justify-center"
               >
-                <img src={project.image} alt={project.name} />
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="rounded-lg"
+                />
               </a>
               <span>{project.name}</span>
               <div className="flex flex-wrap justify-center">
                 {project.techs.map((tech, key) => {
                   return (
                     <span
-                      className="bg-white bg-opacity-5 w-20 mr-2 mb-2 select-all"
+                      className="bg-white bg-opacity-5 w-20 mr-2 mb-2 select-all rounded-lg"
                       key={key}
                     >
                       {tech}
